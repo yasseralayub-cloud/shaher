@@ -18,21 +18,33 @@
       position: relative;
     }
 
-    /* علامة مائية */
-    body::before {
-      content: "شاهر السباك";
-      position: fixed;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      font-size: 90px;
-      font-weight: bold;
-      color: rgba(0, 0, 0, 0.05);
-      z-index: 0;
-      pointer-events: none;
-      white-space: nowrap;
-      font-family: "Cairo", sans-serif;
-    }
+ body {
+  margin: 0;
+  font-family: "Tahoma", sans-serif;
+  background: linear-gradient(to bottom, #f7f9fc, #e3f2fd);
+  color: #222;
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* علامة مائية متكررة */
+body::before {
+  content: "شاهر السباك";
+  position: fixed;
+  inset: 0;
+  font-size: 70px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.04);
+  z-index: 0;
+  pointer-events: none;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
+
+  transform: rotate(-20deg);
+}
 
     header {
       text-align: center;
