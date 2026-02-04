@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>شاهر السباك | معرض الأعمال</title>
+
+  <!-- مكتبة Swiper الرسمية للتقليب باللمس -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: "Tahoma", sans-serif;
+      background: linear-gradient(to bottom, #f7f9fc, #e3f2fd);
+      color: #222;
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    /* علامة مائية */
+    body::before {
+      content: "شاهر السباك";
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 90px;
+      font-weight: bold;
+      color: rgba(0, 0, 0, 0.05);
+      z-index: 0;
+      pointer-events: none;
+      white-space: nowrap;
+      font-family: "Cairo", sans-serif;
+    }
+
+    header {
+      text-align: center;
+      padding: 25px;
+      background: white;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      position: relative;
+      z-index: 2;
+    }
+
+    header h1 {
+      margin: 0;
+      color: #0d47a1;
+      font-size: 28px;
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 15px;
+      color: #444;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .gallery-title {
+      text-align: center;
+      margin: 25px 0 10px;
+      font-size: 20px;
+      color: #1565c0;
+      position: relative;
+      z-index: 2;
+    }
+
+    /* معرض الصور */
+    .swiper {
+      width: 92%;
+      max-width: 700px;
+      height: 420px;
+      margin: auto;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+      z-index: 2;
+      position: relative;
+    }
+
+    .swiper-slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* أزرار الاتصال */
+    .contact-buttons {
+      position: fixed;
+      bottom: 15px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      padding: 0 20px;
+      z-index: 999;
+    }
+
+    .btn {
+      width: 55px;
+      height: 55px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 28px;
+      color: white;
+      text-decoration: none;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      transform: scale(1.08);
+    }
+
+    .whatsapp {
+      background: #25D366;
+    }
+
+    .call {
+      background: #1976d2;
+    }
+
+    footer {
+      margin-top: 40px;
+      padding: 20px;
+      text-align: center;
+      font-size: 14px;
+      color: #555;
+      position: relative;
+      z-index: 2;
+    }
+
+    footer a {
+      color: #0d47a1;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- نبذة تعريفية -->
+  <header>
+    <h1>شاهر السباك</h1>
+    <p>
+      نقدم جميع خدمات السباكة باحترافية عالية، تركيب وصيانة وإصلاح الأعطال
+      بأفضل جودة وأسعار مناسبة داخل المملكة.
+    </p>
+  </header>
+
+  <!-- معرض الأعمال -->
+  <div class="gallery-title">📸 معرض أعمالنا</div>
+
+  <div class="swiper">
+    <div class="swiper-wrapper">
+
+      <!-- ضع صورك هنا -->
+      <!-- مثال -->
+      <div class="swiper-slide"><img src="images/1.jpg"></div>
+      <div class="swiper-slide"><img src="images/2.jpg"></div>
+      <div class="swiper-slide"><img src="images/3.jpg"></div>
+      <div class="swiper-slide"><img src="images/4.jpg"></div>
+      <div class="swiper-slide"><img src="images/5.jpg"></div>
+      <div class="swiper-slide"><img src="images/6.jpg"></div>
+      <div class="swiper-slide"><img src="images/7.jpg"></div>
+      <div class="swiper-slide"><img src="images/8.jpg"></div>
+      <div class="swiper-slide"><img src="images/9.jpg"></div>
+      <div class="swiper-slide"><img src="images/10.jpg"></div>
+      <div class="swiper-slide"><img src="images/11.jpg"></div>
+      <div class="swiper-slide"><img src="images/12.jpg"></div> 
+      <div class="swiper-slide"><img src="images/13.jpg"></div>
+      <div class="swiper-slide"><img src="images/14.jpg"></div>
+      <div class="swiper-slide"><img src="images/15.jpg"></div>
+      <div class="swiper-slide"><img src="images/16.jpg"></div>
+      <div class="swiper-slide"><img src="images/17.jpg"></div>
+      <div class="swiper-slide"><img src="images/18.jpg"></div>
+      <div class="swiper-slide"><img src="images/19.jpg"></div>
+      <div class="swiper-slide"><img src="images/20.jpg"></div>
+      <div class="swiper-slide"><img src="images/21.jpg"></div>
+      <div class="swiper-slide"><img src="images/22.jpg"></div>
+      <div class="swiper-slide"><img src="images/23.jpg"></div>
+      <div class="swiper-slide"><img src="images/24.jpg"></div>
+      <div class="swiper-slide"><img src="images/25.jpg"></div>
+      <div class="swiper-slide"><img src="images/26.jpg"></div>
+      <div class="swiper-slide"><img src="images/27.jpg"></div>
+      <div class="swiper-slide"><img src="images/28.jpg"></div>
+      <div class="swiper-slide"><img src="images/29.jpg"></div>
+      <div class="swiper-slide"><img src="images/30.jpg"></div>
+      
+      <!-- كرر حتى 55 صورة وأكثر -->
+      <!-- يمكنك إضافة -->
+      <!-- <div class="swiper-slide"><img src="images/55.jpg"></div> -->
+
+    </div>
+
+    <!-- الأسهم -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+
+    <!-- النقاط -->
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <!-- أزرار واتس واتصال -->
+  <div class="contact-buttons">
+
+    <!-- واتساب -->
+    <a class="btn whatsapp"
+       href="https://wa.me/966547842760"
+       target="_blank">💬</a>
+
+    <!-- اتصال -->
+    <a class="btn call"
+       href="tel:0547842760">📞</a>
+
+  </div>
+
+  <!-- التذييل -->
+  <footer>
+    تطوير:
+    <a href="https://wa.me/966506572881" target="_blank">
+      yasser alayub
+    </a>
+  </footer>
+
+  <!-- مكتبة Swiper الرسمية -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script>
+    var swiper = new Swiper(".swiper", {
+      loop: true,
+      spaceBetween: 10,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+
+</body>
+</html>
